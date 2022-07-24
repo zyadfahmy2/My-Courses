@@ -7,10 +7,13 @@ int main(void)
 {
     int password = 0;
     
-    while(password != 1999)
+    while(true)
     {
         cin>>password;
-        cout<<"Wrong\n";
+        if(password != 1999)
+            cout<<"Wrong\n";
+        else
+            break;
     }
     cout<<"Correct";
 }

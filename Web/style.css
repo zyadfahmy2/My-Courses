@@ -1,0 +1,132 @@
+/* importing google poppins font  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* using astrisk selector to apply style on all elements in html */
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* making box sizing border box because it was by default content box because we want the child container to be within the parent container */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #f0f0f0;
+    width: 100%;
+    /* we want the header to be fixed when we scroll */
+    position: fixed;
+    /* we dont want any element to be displayed over the header */
+    z-index: 999;
+    display :flex;
+    /* this will make the childs of the header have spaces where the name is going to be on the left and nav is going to be on the right  */
+    justify-content : space-between;
+    /* centering them vertically */
+    align-items: center;
+    /* there are t,r,l,b but when we write it shorthanded like that it means that 10 px fot top and bot and 200 px for right and left  */
+    padding: 10px 200px;
+}
+.logo{
+    /* removing the default underline the comes with the link  */
+    text-decoration: none;
+    color: #3a6cf4;
+    /* capitalizing every character even if it is not capital  */
+    text-transform: capitalize;
+    /* making the font thick  */
+
+    font-weight: 700;
+    /* making the font big but using em which means relative the font in the body but since we did not specify any font in the body it will use the default of the browser which is 16 px  */
+    font-size: 1.8em; /* this means 1.8 * 16px */
+}
+.navigation a{
+    text-decoration: none;
+    color: #3a6cf4;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 30px;
+}
+/* when you hover through the anchor tags its color will change  */
+.navigation a:hover{
+    color:#601cfc;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    /* vh is the current view that you see */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* if i did not write no-repeat that photo would repeate itself multiple times in the view  */
+    background : url(images/istockphoto-1257005098-170667a.jpg) no-repeat;
+    /* to make the picture cover the whole view  */
+    background-size:cover;
+     /* its is not but default center center  */
+    background-position: center;
+    /* if you want to make the photo fixed while scrolling :  */
+    background-attachment: fixed;
+}
+.main h2{
+    color: #f0f0f0;
+    font-weight: 500;
+    font-size: 1.4em;
+}
+.main h2 span{
+    /* we can't make margin on inline element  so this is how to make margins for it  */
+    display: inline-block;
+    margin-top:10px;
+    color: #4e9eff; 
+    font-size: 3em;
+    font-weight :600;
+}
+.main h3{
+    color:#f0f0f0;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main .main-btn{
+    color:#f0f0f0;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    background-color: #3a6cf4;
+    border-radius: 15px;
+    letter-spacing: 1px;
+     /* anchor tags are inline element so we need to convert it to inline block  */
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    margin-bottom: 30px;
+    /* to make iot scale slower  */
+    transition: 0.7s ease;
+    
+
+}
+.main-btn:hover{
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+.social-icons a{
+    color:#f0f0f0;
+    padding-right: 30px;
+    font-size: 1.7em;
+}
+.title{
+    /* we use display flex to make the text at the center easily using the justify content  */
+    display: flex;
+    justify-content: center;
+    color:#3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    /* now the elements will be arranged in rows no columns  */
+    flex-direction: row;
+    flex-wrap is by default no - wrap so when the screen is smaller 
+}

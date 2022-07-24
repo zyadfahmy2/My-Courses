@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking font library to the html -->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- linking css to html -->
+    <link rel = "stylesheet" href = "style.css">
+    <title>Ziad Fahmy</title>
+</head>
+<body>
+    <header>
+        <!-- giving the linke a class so that we can make styling on it separately -->
+        <a href = "#" class = "logo">Ziad</a>
+        <!-- now we need to make semantic html we could have used div but we will use nav -->
+        <nav class = "navigation">
+            <a href = "#services">services</a>
+            <a href = "#projects">projects</a>
+            <a href = "#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- again we could have made it div but to have more semantic the body consists of many sections and this is the main section  -->
+
+    <section class = "main">
+        <div>
+            <!-- i have made span inside h2 in order to style it differently  -->
+            <h2>Hello, I'm Ziad<br><span>Software Developer</span></h2>
+            <h3>I build Software applications</h3>
+            <a href ="#projects" class = "main-btn">View my work</a>
+            <div class = "social-icons">
+                <a href = "https://www.facebook.com/fahmy.zyad/"><i class="fa-brands fa-facebook"></i></a>
+                <a href = "#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href = "#"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- id is unique 2 elements can't have the same id  -->
+    <section class = "cards" id = "services">
+        <h2 class = "title">Services</h2>
+        <div class = "content">
+            <div class ="card">
+                <div class = "icon"></div>
+                <div class = "info">
+                    <h3>Desktop Applications</h3>
+                    <p>building desktop applications using java and javafx</p>
+                </div>
+            </div>
+            <div class ="card">
+                <div class = "icon"></div>
+                <div class = "info">
+                    <h3>Desktop Applications</h3>
+                    <p>building desktop applications using java and javafx</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
